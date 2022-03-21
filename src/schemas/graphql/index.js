@@ -8,14 +8,14 @@ const schema = buildSchema(`
   }
 
   input TaskInput {
-    title: String!
+    title: String
     description: String
     status: TaskStatus
   }
 
   type Task {
     id: ID!
-    title: String
+    title: String!
     description: String
     status: TaskStatus
   }
